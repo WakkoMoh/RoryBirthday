@@ -6,12 +6,11 @@
     <title>Happy 22nd Birthday Rory</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-color: #ffebe9; 
+            --bg-color: #ffebe9;
             --text-color: #5a4646;
         }
 
@@ -26,11 +25,10 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            overflow-x: hidden; 
+            overflow-x: hidden;
             position: relative;
         }
 
-       
         .effect-container {
             position: fixed;
             top: 0;
@@ -69,7 +67,6 @@
             100% { opacity: 0.9; transform: scale(1.1); }
         }
 
-       
         .content {
             z-index: 1;
             text-align: center;
@@ -80,19 +77,26 @@
             align-items: center;
         }
 
-       
         h1 {
             font-family: 'Caveat', cursive;
             font-size: clamp(2.8rem, 6vw, 4.5rem);
             margin-bottom: 0.5rem;
             color: #5a4646;
+            line-height: 1.2;
+        }
+
+        .symbols {
+            display: block;
+            font-size: 0.6em;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            white-space: nowrap;
         }
 
         .nowrap {
             white-space: nowrap;
         }
 
-       
         .message {
             font-size: clamp(1rem, 2.5vw, 1.2rem);
             line-height: 1.8;
@@ -102,7 +106,6 @@
             color: #5a4646;
         }
 
-       
         .cake-container {
             width: 280px;
             height: auto;
@@ -110,7 +113,6 @@
             position: relative;
         }
 
-       
         .flame {
             transform-origin: center bottom;
             animation: flicker 1.5s ease-in-out infinite alternate;
@@ -122,7 +124,6 @@
             100% { transform: scale(0.95) translateY(1px) rotate(2deg); opacity: 0.8; }
         }
 
-       
         .music-btn {
             display: inline-flex;
             align-items: center;
@@ -137,6 +138,7 @@
             text-decoration: none;
             transition: all 0.3s ease;
             box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+            margin-bottom: 20px;
         }
 
         .music-btn:hover {
@@ -148,17 +150,13 @@
 </head>
 <body>
 
-    
     <div class="effect-container" id="effect-container"></div>
 
     <div class="content">
-       
-        <h1>Happy 22nd Birthday, Rory <span class="nowrap">⋆ ˚｡⋆୨୧˚</span></h1>
+        <h1>Happy 22nd Birthday, Rory <span class="symbols">⋆ ˚｡⋆୨୧˚</span></h1>
 
         <div class="cake-container">
-          
             <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-              
                 <g transform="translate(15, 100)">
                     <ellipse cx="30" cy="50" rx="25" ry="30" fill="#fff" stroke="#ffccd5" stroke-width="2"/>
                     <ellipse cx="20" cy="15" rx="8" ry="25" fill="#fff" stroke="#ffccd5" stroke-width="2" transform="rotate(-15 20 15)"/>
@@ -172,8 +170,88 @@
                     <circle cx="42" cy="52" r="4" fill="#ffccd5" opacity="0.8"/>
                 </g>
 
-               
                 <g transform="translate(225, 100)">
                     <ellipse cx="30" cy="50" rx="25" ry="30" fill="#fff" stroke="#ffccd5" stroke-width="2"/>
                     <ellipse cx="20" cy="15" rx="8" ry="25" fill="#fff" stroke="#ffccd5" stroke-width="2" transform="rotate(-15 20 15)"/>
-                    <ellipse cx="20" cy="15" rx="4" ry="15" fill="#ffb6c1" transform="rotate
+                    <ellipse cx="20" cy="15" rx="4" ry="15" fill="#ffb6c1" transform="rotate(-15 20 15)"/>
+                    <ellipse cx="40" cy="15" rx="8" ry="25" fill="#fff" stroke="#ffccd5" stroke-width="2" transform="rotate(15 40 15)"/>
+                    <ellipse cx="40" cy="15" rx="4" ry="15" fill="#ffb6c1" transform="rotate(15 40 15)"/>
+                    <circle cx="22" cy="45" r="2.5" fill="#5a4646"/>
+                    <circle cx="38" cy="45" r="2.5" fill="#5a4646"/>
+                    <path d="M 28 50 Q 30 53 32 50" fill="none" stroke="#5a4646" stroke-width="1.5"/>
+                    <circle cx="18" cy="52" r="4" fill="#ffccd5" opacity="0.8"/>
+                    <circle cx="42" cy="52" r="4" fill="#ffccd5" opacity="0.8"/>
+                </g>
+
+                <g transform="translate(75, 80)">
+                    <rect x="10" y="50" width="130" height="40" rx="5" fill="#ffd6e0"/>
+                    <path d="M 10 90 Q 75 105 140 90 L 140 80 Q 75 95 10 80 Z" fill="#ffc2d1"/>
+                    <rect x="25" y="20" width="100" height="40" rx="5" fill="#ffb3c6"/>
+                    <path d="M 20 25 Q 30 40 40 25 Q 50 45 60 25 Q 75 50 90 25 Q 100 40 110 25 Q 120 45 130 25 L 130 15 L 20 15 Z" fill="#ffffff"/>
+                    <rect x="35" y="35" width="6" height="2" rx="1" fill="#ff0a54" transform="rotate(15 35 35)"/>
+                    <rect x="80" y="40" width="6" height="2" rx="1" fill="#ff0a54" transform="rotate(-20 80 40)"/>
+                    <rect x="50" y="70" width="6" height="2" rx="1" fill="#ffffff" transform="rotate(45 50 70)"/>
+                    <rect x="100" y="65" width="6" height="2" rx="1" fill="#ffffff" transform="rotate(-15 100 65)"/>
+                    <rect x="75" y="55" width="6" height="2" rx="1" fill="#ffffff" transform="rotate(10 75 55)"/>
+
+                    <rect x="55" y="-10" width="6" height="30" fill="#fff" stroke="#ffccd5" stroke-width="1"/>
+                    <rect x="55" y="-5" width="6" height="4" fill="#ffb6c1"/>
+                    <rect x="55" y="5" width="6" height="4" fill="#ffb6c1"/>
+                    <path d="M 58 -20 Q 62 -12 58 -10 Q 54 -12 58 -20" fill="#ff9900" class="flame"/>
+                    
+                    <rect x="89" y="-10" width="6" height="30" fill="#fff" stroke="#ffccd5" stroke-width="1"/>
+                    <rect x="89" y="-5" width="6" height="4" fill="#ffb6c1"/>
+                    <rect x="89" y="5" width="6" height="4" fill="#ffb6c1"/>
+                    <path d="M 92 -20 Q 96 -12 92 -10 Q 88 -12 92 -20" fill="#ff9900" class="flame" style="animation-delay: 0.5s"/>
+                </g>
+            </svg>
+        </div>
+
+        <p class="message">
+            Happy birthday to someone who genuinely means so much to me <span class="nowrap">( ˘ ³˘)♥</span> 
+            You have this effortless way of making everything around you feel lighter, warmer, and just better. 
+            Looking back, having you in my life is easily one of the best things that has happened to me <span class="nowrap">⋆.ೃ࿔*:･</span><br><br>
+            I hope this new chapter brings you all the peace, joy, and success you truly deserve. 
+            Enjoy every bit of your day, you deserve to be celebrated today and always. 
+            Sending you so much love, always <span class="nowrap">✧˖°.</span>
+        </p>
+
+        <a href="https://youtu.be/PWK8EuUSMSI?si=TU9KrudueJZPhKXv" target="_blank" class="music-btn">
+            A soft song for your special day ♫
+        </a>
+    </div>
+
+    <script>
+        const container = document.getElementById('effect-container');
+        
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('floating-heart');
+            heart.innerHTML = ['🤍', '🩷', '🌸'][Math.floor(Math.random() * 3)];
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (Math.random() * 3 + 5) + 's';
+            container.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 8000);
+        }
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.classList.add('twinkling-star');
+            star.innerHTML = '✨';
+            star.style.left = Math.random() * 100 + 'vw';
+            star.style.top = Math.random() * 100 + 'vh';
+            star.style.animationDuration = (Math.random() * 2 + 1.5) + 's';
+            container.appendChild(star);
+        }
+
+        for(let i = 0; i < 15; i++) {
+            createStar();
+        }
+
+        setInterval(createHeart, 900);
+    </script>
+</body>
+</html>
